@@ -1,4 +1,6 @@
-public class Student extends Serializable {
+import java.io.Serializable; // Correct import
+
+public class Student implements Serializable {  // Implement Serializable, not extend
     private int id;
     private String name;
     private int age;
@@ -15,7 +17,7 @@ public class Student extends Serializable {
         return id;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
