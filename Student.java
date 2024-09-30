@@ -1,5 +1,5 @@
-import java.io.*;
-public class Student implements Serializable {
+import java.util.io.*;
+public class Student implemnts Serializable {
     private int id;
     private String name;
     private int age;
