@@ -15,7 +15,7 @@ public class Student extends Serializable {
         return id;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
