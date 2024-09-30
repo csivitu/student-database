@@ -1,3 +1,5 @@
+import java.io.Serializable;  // **Added this import to resolve Serializable**
+
 public class Student implements Serializable {
     private int id;
     private String name;
