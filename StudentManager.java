@@ -12,7 +12,7 @@ private class StudentManager {
         saveToFile();
     }
 
-    public Student(int id) {
+    public StudentManager(int id) {
         for (Student student : studentList) {
             if (student.getId() == id) {
                 return student;
