@@ -32,9 +32,12 @@ private class StudentManager {
 
     public void deleteStudent(int id) {
         Student student = getStudentById(id);
-        if (student == null) {
+        if (student != null) {
             studentList.remove(student);
             saveToFile();
+        }
+        else{
+            System.out.println(id + " not found.");
         }
     }
 
