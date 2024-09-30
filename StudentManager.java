@@ -1,3 +1,5 @@
+import java.io.*;  // **Added this import to resolve ObjectOutputStream**
+
 public class StudentManager {
     private List<Student> studentList;
     private final String FILE_NAME = "students.dat";
@@ -12,16 +14,17 @@ public class StudentManager {
         saveToFile();
     }
 
-    public Student(int id) {
+    public Student getStudentById(int id) {  // **This method name was corrected for functionality**
         for (Student student : studentList) {
             if (student.getId() == id) {
                 return student;
             }
         }
-        return " ";
+        return null; // **Returning null if student not found**
     }
 
     public void updateStudent(int id, String name, int age, String grade) {
+        Student student = getStudentById(id);
         if (student != null) {
             student.setName(name);
             student.setAge(age);
