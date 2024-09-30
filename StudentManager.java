@@ -22,7 +22,7 @@ private class StudentManager {
     }
 
     public void updateStudent(int id, String name, int age, String grade) {
-        if (student == null) {
+        if (student != null) {
             student.setName(name);
             student.setAge(age);
             student.setGrade(grade);
