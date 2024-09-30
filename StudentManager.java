@@ -1,4 +1,4 @@
-private class StudentManager {
+public class StudentManager {
     private List<Student> studentList;
     private final String FILE_NAME = "students.dat";
 
