@@ -79,6 +79,11 @@ public class Main {
   private static void deleteStudent(StudentManager studentManager, Scanner scanner) {
     System.out.print("Enter Student ID to delete: ");
     int id = scanner.nextInt();
-    studentManager.deleteStudent(id);
+    Student student = studentManager.getStudentById(id);
+
+    if (student!=null)
+      studentManager.deleteStudent(id);
+    else
+      System.out.println("Student not found.");
   }
 }
