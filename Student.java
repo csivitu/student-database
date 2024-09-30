@@ -1,4 +1,4 @@
-public class Student extends Serializable {
+public class Student implements Serializable {
     private int id;
     private String name;
     private int age;
