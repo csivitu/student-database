@@ -21,7 +21,7 @@ public class StudentManager {
         return " ";
     }
 
-    public void updateStudent(int id, String name, int age, String grade) {
+    public void updateStudent(int id, String name, int age, String grade, Student student) {
         if (student != null) {
             student.setName(name);
             student.setAge(age);

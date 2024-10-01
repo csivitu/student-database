@@ -70,7 +70,7 @@ public class Main {
       System.out.print("Enter new Grade: ");
       String grade = scanner.nextLine();
 
-      studentManager.updateStudent(id, name, age, grade);
+      studentManager.updateStudent(id, name, age, grade, student);
     } else {
       System.out.println("Student not found.");
     }
